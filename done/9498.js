@@ -10,7 +10,7 @@
 ;() => {
   const fs = require('fs')
   const score = parseInt(
-    parseInt(fs.readFileSync('/dev/stdin').toString().trim())
+    parseInt(fs.readFileSync('/dev/stdin').toString().trim()) 
   )
 
   if (score >= 90) console.log('A')
