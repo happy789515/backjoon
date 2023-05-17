@@ -19,6 +19,4 @@
   } else {
     console.log(y > 0 ? 2 : 3);
   }
-
-  
 })
