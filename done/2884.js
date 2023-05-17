@@ -15,8 +15,7 @@
 
 ;(() => {
   const fs = require('fs')
-  // const [H,M] = fs.readFileSync(0).toString().split(' ').map(n => (Number(n)))
-  const [H,M] = [10, 10]
+  const [H,M] = fs.readFileSync(0).toString().split(' ').map(n => (Number(n)))
 
   let total = H * 60 + M
   const MAX = 60 * 24
@@ -27,5 +26,5 @@
     total -= 45
   }
 
-  console.log(`${ParseInt(total/60)} ${total%60}`)
+  console.log(`${(Math.trunc(total/60))} ${total%60}`)
 })
